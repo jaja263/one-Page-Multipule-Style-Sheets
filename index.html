@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/Style.css">
+    <link rel="stylesheet" id="Style" href="/css/one.css">
+    <link rel="icon" type="image/jpg" href="/img/logo-n.png">
+    <title>Power of CSS</title>
+</head>
+<body> 
+    <div class="container">
+      <div class="item1">
+        <nav>
+         
+          <a href="#">Home</a>
+          <a href="#">Products</a>
+          <a href="#">News</a>
+         
+          
+        </nav>
+      </div>
+      <div class="item2">
+        <button type="button" onclick="Restyle(1)">Style1</button>
+        <button type="button" onclick="Restyle(0)">Style2</button>
+        <button type="button" onclick="Restyle(2)">noStyle</button>
+
+      </div>
+      <div class="item"><h2>Space and Nature</h2>
+      <p> <b>Lorem ipsum</b>  dolor sit amet, consectetur
+         adipisicing elit. Officia laboriosam
+          quibusdam quas porro, suscipit molestias
+           quia, nulla unde, possimus praesentium
+            id ad. Voluptas animi, laboriosam pariatur
+             exercitationem tempora tenetur dicta.</p>
+            <img src="https://source.unsplash.com/200x200/?space,nature" alt=""></div>
+      
+      <div class="item"><h2>Coding</h2>
+        <p><b>Lorem ipsum</b> dolor sit amet, consectetur
+           adipisicing elit. Officia laboriosam
+            quibusdam quas porro, suscipit molestias
+             quia, nulla unde, possimus praesentium
+              id ad. Voluptas animi, laboriosam pariatur
+               exercitationem tempora tenetur dicta.</p>
+               <img src="https://source.unsplash.com/200x200/?Science,Coding" alt=""></div>
+      <div class="item1 footer">  <b>&reg;</b> LearnTill End <h2> </h2>
+       
+      </div>
+    </div>
+        <script>
+            function Restyle(st) {
+              var css;
+              if (st==1) {
+                css = "css/one.css"
+              }
+               else if (st==0){
+                css = "css/two.css"
+              }
+              else{
+                  css=''
+              }
+              document.getElementById('Style').href = css;
+            }
+            </script>
+</body>
+</html>

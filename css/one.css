@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: red;
+}
+.container{
+    display: grid;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+}
+.item{
+    background-color: skyblue;
+}
+
+nav a{
+    margin: 5px;
+    text-decoration: none;
+    padding: 30px;
+    color: white;
+    font-size: 20px;
+}
+nav a:hover{
+    color: blue;
+   
+}
+button{
+    background-color: rgb(243, 31, 225);
+    padding: 10px;
+    display: block;
+    margin: 10px;
+    border: 2px solid rgb(226, 136, 238);
+    border-radius: 10px;
+    color: whitesmoke;
+    font-weight: bolder;
+    text-transform:uppercase;
+    width: 120px;
+}
+button:hover{
+    background-color: rgb(132, 201, 64);
+    border-color: rgb(68, 121, 16);
+}
+.item2{
+    background-color: skyblue;
+    padding: 20px;    
+}
+.item1{
+    grid-column: span 3;
+    text-align: left;  
+    height: 50px;
+}
+
+.item h2 {
+    text-align: center;
+    padding: 10px;
+}
+.item p{
+    padding: 10px;
+    
+}
+.item p b{
+    padding: 10px;
+    color: rgb(24, 39, 168);
+    text-decoration: underline;
+  
+   
+} 
+.item img{
+    margin: 10px;
+    padding: 10px;
+}
+.footer{
+    text-align: center;
+    background-color: rgb(214, 156, 30);
+    padding: 15px;
+    font-size: 20px;
+}
+@media(max-width:500px){
+   .container{
+      display: block;
+   }
+   nav a{
+   padding: 5px;
+   margin: 0;
+}
+.item1{
+    text-align:center;
+}
+    
+}
